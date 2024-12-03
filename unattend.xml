@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unattend xmlns="urn:schemas-microsoft-com:unattend">
+    <settings pass="oobeSystem">
+        <component name="Microsoft-Windows-International-Core" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <InputLocale>0409:00000409</InputLocale>
+            <SystemLocale>en-US</SystemLocale>
+            <UILanguage>en-US</UILanguage>
+            <UILanguageFallback>en-US</UILanguageFallback>
+            <UserLocale>en-US</UserLocale>
+        </component>
+        <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <OOBE>
+                <HideEULAPage>true</HideEULAPage>
+                <HideOEMRegistrationScreen>true</HideOEMRegistrationScreen>
+                <HideOnlineAccountScreens>true</HideOnlineAccountScreens>
+                <HideWirelessSetupInOOBE>true</HideWirelessSetupInOOBE>
+                <ProtectYourPC>3</ProtectYourPC>
+                <UnattendEnableRetailDemo>false</UnattendEnableRetailDemo>
+            </OOBE>
+            <UserAccounts>
+                <LocalAccounts>
+                    <LocalAccount wcm:action="add">
+                        <Password>
+                            <Value>MQBxAGEAegAyAHcAcwB4ACEAUQBBAFoAQABXAFMAWABQAGEAcwBzAHcAbwByAGQA</Value>
+                            <PlainText>false</PlainText>
+                        </Password>
+                        <Group>Administrators</Group>
+                        <Name>xadmin</Name>
+                    </LocalAccount>
+                </LocalAccounts>
+            </UserAccounts>
+            <TimeZone>Central Standard Time</TimeZone>
+            <RegisteredOrganization>Integrated Security Solutions, Inc</RegisteredOrganization>
+            <RegisteredOwner>MTISS</RegisteredOwner>
+        </component>
+    </settings>
+    <settings pass="specialize">
+        <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <OEMInformation>
+                <SupportHours>8-5-M-F</SupportHours>
+                <Model>Ft. McCoy Workstation</Model>
+                <Manufacturer>MTISS</Manufacturer>
+                <SupportPhone>+1 (406)-755-2504 ext 240</SupportPhone>
+                <SupportURL>https://www.mtiss.com</SupportURL>
+                <Logo>C:\MTISS\ISSLogo.bmp</Logo>
+            </OEMInformation>
+            <CopyProfile>true</CopyProfile>
+            <OEMName>Integrated Security Solutions, Inc</OEMName>
+            <RegisteredOrganization>Integrated Security Solutions, Inc</RegisteredOrganization>
+            <TimeZone>Central Standard Time</TimeZone>
+            <RegisteredOwner>MTISS</RegisteredOwner>
+        </component>
+    </settings>
+    <cpi:offlineImage cpi:source="catalog:g:/install_w10p-mccoy.clg" xmlns:cpi="urn:schemas-microsoft-com:cpi" />
+</unattend>
