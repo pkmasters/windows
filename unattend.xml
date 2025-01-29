@@ -21,35 +21,35 @@
                 <LocalAccounts>
                     <LocalAccount wcm:action="add">
                         <Password>
-                            <Value>MQBxAGEAegAyAHcAcwB4ACEAUQBBAFoAQABXAFMAWABQAGEAcwBzAHcAbwByAGQA</Value>
+                            <Value>PASSWORD-HASH</Value>
                             <PlainText>false</PlainText>
                         </Password>
                         <Group>Administrators</Group>
-                        <Name>xadmin</Name>
+                        <Name>admin</Name>
                     </LocalAccount>
                 </LocalAccounts>
             </UserAccounts>
-            <TimeZone>Central Standard Time</TimeZone>
-            <RegisteredOrganization>Integrated Security Solutions, Inc</RegisteredOrganization>
-            <RegisteredOwner>MTISS</RegisteredOwner>
+            <TimeZone>TIMEZONE</TimeZone>
+            <RegisteredOrganization>COMPANY</RegisteredOrganization>
+            <RegisteredOwner>COMPANY</RegisteredOwner>
         </component>
     </settings>
     <settings pass="specialize">
         <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
             <OEMInformation>
-                <SupportHours>8-5-M-F</SupportHours>
-                <Model>Ft. McCoy Workstation</Model>
-                <Manufacturer>MTISS</Manufacturer>
-                <SupportPhone>+1 (406)-755-2504 ext 240</SupportPhone>
-                <SupportURL>https://www.mtiss.com</SupportURL>
-                <Logo>C:\MTISS\ISSLogo.bmp</Logo>
+                <SupportHours>24-7-365</SupportHours>
+                <Model>MY Workstation</Model>
+                <Manufacturer>COMPANY</Manufacturer>
+                <SupportPhone>(123) 456-7890</SupportPhone>
+                <SupportURL>https://website.com</SupportURL>
+                <Logo>C:\hidden\logo.jpg</Logo>
             </OEMInformation>
             <CopyProfile>true</CopyProfile>
-            <OEMName>Integrated Security Solutions, Inc</OEMName>
-            <RegisteredOrganization>Integrated Security Solutions, Inc</RegisteredOrganization>
-            <TimeZone>Central Standard Time</TimeZone>
-            <RegisteredOwner>MTISS</RegisteredOwner>
+            <OEMName>COMPANY</OEMName>
+            <RegisteredOrganization>COMPANY</RegisteredOrganization>
+            <TimeZone>TIME</TimeZone>
+            <RegisteredOwner>COMPANY</RegisteredOwner>
         </component>
     </settings>
-    <cpi:offlineImage cpi:source="catalog:g:/install_w10p-mccoy.clg" xmlns:cpi="urn:schemas-microsoft-com:cpi" />
+    <cpi:offlineImage cpi:source="catalog:g:/install_w10p.clg" xmlns:cpi="urn:schemas-microsoft-com:cpi" />
 </unattend>
