@@ -1,6 +1,6 @@
-# Windows Project
+# Windows Repository
 
-Welcome to the Windows Project repository! This project focuses on providing configurations, scripts, and tools for optimizing and managing Windows environments. Whether you're a developer, system administrator, or enthusiast, you'll find resources to enhance your Windows experience.
+Welcome to the Windows repository! This project focuses on providing configurations, scripts, and tools for optimizing and managing Windows environments. Whether you're a developer, system administrator, or enthusiast, you'll find resources to enhance your Windows experience.
 
 ## Overview
 
