@@ -1,4 +1,4 @@
-# NOTE: this script uses the PSWindowsUpdate module!!
+# NOTE: this script uses the PSWindowsUpdate module --> https://www.powershellgallery.com/packages/PSWindowsUpdate
 
 # Get all enabled computers in the domain
 $computers = Get-Content -Path "C:\Users\Admin\Documents\scripts\computers.txt"
