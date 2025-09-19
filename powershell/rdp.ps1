@@ -1,21 +1,38 @@
+# Change policy for this session
+#powershell.exe -ExecutionPolicy RemoteSigned
+
+# Pretext for window
+Write-Host "RDP Connection to Servers and Workstations
+"
+
+# Prompt for username (UPN)
+$user = Read-Host "Enter the username (no UPN)"
+
+# Spacing
+Write-Host "
+"
+
 # Prompt for hostname only
 $hostname = Read-Host "Enter the hostname (no FQDN)"
 
-# Define your domain suffix
+# Define your domain suffix for FQDN
 $domainSuffix = ".domain.local"
+
+# Define your domain suffix for UPN
+$upnSuffix = "@domain.local"
 
 # Build the FQDN
 $fqdn = "$hostname$domainSuffix"
 
-# Define your RDP username (will appear in login window)
-$username = "user@domain.local"
+# Build the UPN
+$upn = "$user$upnSuffix"
 
 # Create a temporary .rdp file
-$tempRdp = "$env:TEMP\ps_rdp.rdp"
+$tempRdp = "$env:TEMP\rdp_session.rdp"
 
 @"
 full address:s:$fqdn
-username:s:$username
+username:s:$upn
 screen mode id:i:2
 use multimon:i:0
 session bpp:i:32
